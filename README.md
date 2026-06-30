@@ -4,7 +4,11 @@
 
 **Impact mesuré sur mon setup** : `CLAUDE.md` passé de **414 lignes → 99 lignes**, économie de ~4-5k tokens **par message** sans perte de capacité. Investissement rentabilisé après ~10 messages.
 
-> 🚀 **Tu débutes avec Claude Code ?** Va directement au **[GUIDE-DEMARRAGE.md](GUIDE-DEMARRAGE.md)** — installation guidée en 10 min. Le README ci-dessous explique le pourquoi et l'architecture, le GUIDE explique le comment.
+> 🚀 **Tu débutes avec Claude Code ?**
+> - **Installation en 1 prompt** (la plus rapide) → **[INSTALL-PROMPT.md](INSTALL-PROMPT.md)** : tu copies-colles dans Claude, il fait tout
+> - **Installation manuelle** (si tu veux comprendre) → **[GUIDE-DEMARRAGE.md](GUIDE-DEMARRAGE.md)** : commandes copier-coller, ~10 min
+>
+> Le README ci-dessous explique le pourquoi et l'architecture.
 >
 > 🎤 **Auto-personnalisation** : au 1er *"Salut Claude !"*, Claude lance un questionnaire bootstrap (10 questions) et configure le cortex pour TOI — pas pour moi. Ton Claude deviendra ton partenaire, comme le mien est devenu le mien.
 

@@ -30,7 +30,17 @@ Si tu vois un numéro de version, t'es bon. Sinon, retour à la doc Claude Code.
 
 ---
 
-## Installation du cerveau (3 min)
+## Installation — voie #1 (la plus rapide, recommandée)
+
+**Une seule étape** : ouvre Claude Code et copie-colle le prompt fourni dans **[INSTALL-PROMPT.md](INSTALL-PROMPT.md)**.
+
+Claude détecte ton OS, clone le repo, copie les fichiers aux bons endroits, vérifie, puis **lance directement le questionnaire bootstrap**. Tout dans la même session, ~30 secondes avant la 1re question.
+
+Si tu choisis cette voie : saute la section "Installation — voie #2" et "Premier Salut Claude" ci-dessous (le bootstrap démarre tout seul). Reviens directement à **"Comment vérifier que ça marche vraiment"**.
+
+---
+
+## Installation — voie #2 (manuelle, si tu veux comprendre)
 
 ### 1. Copier le template dans ton dossier `~/.claude/`
 
