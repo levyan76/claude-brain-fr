@@ -51,7 +51,7 @@ Si le projet courant active des MCPs/Connectors **non utilisés dans son workflo
 Seuils d'alerte :
 - **Cortex > 150 lignes** → trop. Quelque chose doit sortir vers un playbook.
 - **Un playbook > 200 lignes** → probablement 2 playbooks fusionnés ; à splitter.
-- **Une mémoire projet > 500 lignes au total** → l'index `MEMORY.md` n'est plus pratique ; restructurer.
+- **Un fichier de mémoire projet > 500 lignes** (PAR fichier, pas le total) → trop gros, splitter ou condenser. Le total cumulé d'une mémoire projet peut atteindre 1000-1500 lignes réparties sur 10-15 fichiers sans problème — c'est l'esprit du modèle cerveau.
 - **CLAUDE.md projet > 200 lignes** → faire le même exercice cortex/playbooks au niveau projet.
 
 ## Étape 3 — Repérer la redondance

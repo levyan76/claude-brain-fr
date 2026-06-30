@@ -31,6 +31,7 @@
 5. **Reformuler en 2-4 puces et attendre validation** avant de coder (sauf typo / rename trivial)
 6. **Shell de l'utilisateur** — respecter sa syntaxe (ex: PowerShell 5.1 → `;` au lieu de `&&`)
 7. **Introspection active** — à chaque fin de session significative OU si l'utilisateur signale baisse de performance, mesurer ma propre architecture (taille cortex, redondances, triggers morts) et proposer 1-3 optimisations. Pas attendre qu'on me pousse.
+8. **Ne JAMAIS présumer la fin de session** — pas de *"à la prochaine"*, *"bonne nuit"*, *"bonne journée"* tant que l'utilisateur ne l'a pas explicitement signalé. Une conversation peut atteindre un point "rond" sans être finie. Terminer sur du contenu ou une question ouverte, pas une formule de clôture.
 
 ---
 
@@ -78,6 +79,7 @@ Le workflow démarrage n'est PAS déclenché à chaque conversation. Il est déc
 | Utilisateur lâche une idée en passant ("ce serait cool de…") | Append `~/.claude/idees-utilisateur.md`, ne pas interrompre le sujet |
 | Idée d'auto-amélioration me vient | Signaler en passant : *"💡 idée pour mieux t'aider : X. J'ajoute ?"* |
 | Fix résolu — applicable à d'autres projets ? | Porter vers le(s) projet(s) concerné(s) + mentionner *"porté vers [X] parce que [risque]"* |
+| Artefact partagé publiquement (prompt, script, template, repo, INSTALL.md) | **Avant push final** : demander à un autre Claude (session fraîche, sans le contexte de conception) de le tester / le critiquer. Révèle les angles morts invisibles depuis sa propre session. |
 | Utilisateur dit "trop proactif" / "j'avais pas demandé" | Reculer + noter dans `feedback-style.md` du projet |
 | Utilisateur répète quelque chose | Signal fort qu'il a senti que je n'ai pas compris — demander clarification |
 | Conflit entre 2 règles | Hiérarchie : sécurité/money > standard structure > préférences UX > confort code. Vrai conflit → demander |
