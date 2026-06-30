@@ -4,9 +4,11 @@
 
 **Impact mesuré sur mon setup** : `CLAUDE.md` passé de **414 lignes → 99 lignes**, économie de ~4-5k tokens **par message** sans perte de capacité. Investissement rentabilisé après ~10 messages.
 
-> 🚀 **Tu débutes avec Claude Code ?**
-> - **Installation en 1 prompt** (la plus rapide) → **[INSTALL-PROMPT.md](INSTALL-PROMPT.md)** : tu copies-colles dans Claude, il fait tout
+> 🚀 **Tu débutes avec Claude Code ou ton cortex est vierge ?**
+> - **Installation en 1 prompt** (la plus rapide) → **[INSTALL-PROMPT.md](INSTALL-PROMPT.md)** : tu copies-colles dans Claude, il fait tout (avec protection backup + sandbox si tu as déjà un setup)
 > - **Installation manuelle** (si tu veux comprendre) → **[GUIDE-DEMARRAGE.md](GUIDE-DEMARRAGE.md)** : commandes copier-coller, ~10 min
+>
+> ⚠️ **Si tu as déjà un `~/.claude/CLAUDE.md` custom mature** (que tu as toi-même écrit) : le prompt d'install s'arrêtera pour te proposer 3 options (écraser avec backup / sandbox de test / annuler). Si tu veux juste piocher des idées, lis directement les fichiers du repo et fais du cherry-pick manuel.
 >
 > Le README ci-dessous explique le pourquoi et l'architecture.
 >
