@@ -9,7 +9,7 @@
 Un **template de configuration** pour Claude Code qui :
 - **Économise tes tokens** (~50-80% de moins par message)
 - **Garde la mémoire** entre tes sessions (Claude se souvient de toi, de tes projets, de tes erreurs/succès)
-- **Se personnalise tout seul** : au 1er lancement, Claude te pose 9 questions et adapte le cortex pour toi
+- **Se personnalise tout seul** : au 1er lancement, Claude te pose 10 questions et adapte le cortex pour toi
 
 Au lieu de répéter qui tu es à chaque session, Claude a un "cerveau" structuré : un cortex toujours actif + des mémoires lues seulement quand utiles.
 
@@ -87,7 +87,7 @@ Salut Claude !
 
 **Ce qui devrait se passer** :
 1. Claude détecte que ton cortex contient encore `<À REMPLIR>`
-2. Il lance le **questionnaire bootstrap** : 9 questions courtes (nom, métier, OS, stack, style préféré, projets actifs, etc.)
+2. Il lance le **questionnaire bootstrap** : 10 questions courtes (nom, métier, OS, stack, style préféré, projets actifs, etc.)
 3. Réponds une par une, naturellement (pas besoin de réponses parfaites — tu pourras éditer après)
 4. À la fin, Claude **modifie `~/.claude/CLAUDE.md` tout seul** avec tes réponses
 5. Il te confirme : *"Voilà ton cortex configuré"*

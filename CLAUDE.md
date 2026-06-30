@@ -127,7 +127,8 @@ Exemple :
 6. **Sur quel OS tu travailles ?** (Windows / macOS / Linux — change les commandes shell que je te donne)
 7. **Tu préfères que je te parle comment ?** tu/vous, formel/friendly, court/détaillé, avec ou sans humour, français ou anglais
 8. **Tu as 1 à 3 projets actifs ?** (nom + chemin + état rapide — pour le tableau "Projets actifs")
-9. **Une règle absolue que je dois jamais violer ?** (un truc personnel qui te casserait les pieds)
+9. **Tu travailles sur quel genre de projet ?** (Boutique Shopify, SaaS, E-book / contenu, App mobile, Site marketing, Outil interne, Trading/finance, etc. — pour adapter mes angles : un projet Shopify a des réflexes différents d'un SaaS B2B ou d'un produit éditorial)
+10. **Une règle absolue que je dois jamais violer ?** (un truc personnel qui te casserait les pieds)
 
 **Après les réponses** :
 1. Remplir la section "Mon utilisateur" + "Projets actifs" + "Environnement" avec les réponses
