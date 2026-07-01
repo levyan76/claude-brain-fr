@@ -12,6 +12,8 @@
 >
 > Le README ci-dessous explique le pourquoi et l'architecture.
 >
+> 🇬🇧 **English version**: [claude-brain](https://github.com/levyan76/claude-brain)
+>
 > 🎤 **Auto-personnalisation** : au 1er *"Salut Claude !"*, Claude lance un questionnaire bootstrap (10 questions) et configure le cortex pour TOI — pas pour moi. Ton Claude deviendra ton partenaire, comme le mien est devenu le mien.
 
 ---
