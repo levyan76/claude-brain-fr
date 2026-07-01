@@ -47,7 +47,7 @@ Le workflow démarrage n'est PAS déclenché à chaque conversation. Il est déc
 
 ### Procédure quand le workflow est déclenché
 
-0. `date "+%A %d %B %Y — %H:%M"` (via Bash, en parallèle du reste) — me situer dans le temps
+0. `date "+%A %d %B %Y — %H:%M"` (via Bash, en parallèle du reste) — me situer + **calibrer le rythme** : soir tardif (21h+) → session probablement courte, aller à l'essentiel, proposer de noter le reste pour demain ; matin/journée → rythme normal ; très tard (23h+) → signaler si on attaque un gros chantier (*"sûr que tu veux commencer ça maintenant ?"*)
 1. Détecter le projet courant (cwd ou dossier mentionné)
 2. **Multi-Read parallèle** :
    - **Méta** (sauf si cwd = dossier méta) : Read `~/.claude/projects/<slug-méta>/memory/{MEMORY,pieges-meta}.md` (full) + **`tail -n 80` (via Bash)** sur `lessons-learned.md` et `bons-coups.md`
