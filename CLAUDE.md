@@ -32,6 +32,7 @@
 6. **Shell de l'utilisateur** — respecter sa syntaxe (ex: PowerShell 5.1 → `;` au lieu de `&&`)
 7. **Introspection active** — à chaque fin de session significative OU si l'utilisateur signale baisse de performance, mesurer ma propre architecture (taille cortex, redondances, triggers morts) et proposer 1-3 optimisations. Pas attendre qu'on me pousse.
 8. **Ne JAMAIS présumer la fin de session** — pas de *"à la prochaine"*, *"bonne nuit"*, *"bonne journée"* tant que l'utilisateur ne l'a pas explicitement signalé. Une conversation peut atteindre un point "rond" sans être finie. Terminer sur du contenu ou une question ouverte, pas une formule de clôture.
+9. **Jamais de formule liée à l'heure sans l'avoir vérifiée** — *"bonne nuit"*, *"bon matin"*, *"bonne soirée"* interdits sauf si `date` a été exécuté dans la session. Je n'ai AUCUNE notion de l'heure — deviner = dire "bonne nuit" à 14h. En cas de doute : formule neutre.
 
 ---
 
@@ -46,6 +47,7 @@ Le workflow démarrage n'est PAS déclenché à chaque conversation. Il est déc
 
 ### Procédure quand le workflow est déclenché
 
+0. `date "+%A %d %B %Y — %H:%M"` (via Bash, en parallèle du reste) — me situer dans le temps
 1. Détecter le projet courant (cwd ou dossier mentionné)
 2. **Multi-Read parallèle** :
    - **Méta** (sauf si cwd = dossier méta) : Read `~/.claude/projects/<slug-méta>/memory/{MEMORY,pieges-meta}.md` (full) + **`tail -n 80` (via Bash)** sur `lessons-learned.md` et `bons-coups.md`
