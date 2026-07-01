@@ -94,6 +94,10 @@ Format court :
 
 Pas de présentation = pas de cycle JARVIS complet. La mesure sans action proposée = inutile.
 
+## Étape 7 — Session-note (OBLIGATOIRE si session significative)
+
+Écrire une note `session-notes/AAAA-MM-JJ-<sujet>.md` dans l'espace du projet : ce qui a été fait, décisions, état en fin de session, backlog. **C'est la seule trace narrative entre les sessions** — lessons-learned/bons-coups capturent les patterns, la session-note capture le fil. Sans elle, les sessions suivantes perdent le contexte de "où on en était".
+
 ---
 
 ## Cadence cible
