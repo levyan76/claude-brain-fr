@@ -98,6 +98,22 @@ Pas de présentation = pas de cycle JARVIS complet. La mesure sans action propos
 
 Écrire une note `session-notes/AAAA-MM-JJ-<sujet>.md` dans l'espace du projet : ce qui a été fait, décisions, état en fin de session, backlog. **C'est la seule trace narrative entre les sessions** — lessons-learned/bons-coups capturent les patterns, la session-note capture le fil. Sans elle, les sessions suivantes perdent le contexte de "où on en était".
 
+## Étape 8 — Cycle de vie mémoire (condensation, ~1×/mois)
+
+La règle `tail -n 80` gère la LECTURE des vieux fichiers, rien ne gère leur CONDENSATION. Sans ça, un `lessons-learned.md` de 400 lignes = 300 lignes jamais relues.
+
+Quand `lessons-learned.md` ou `bons-coups.md` dépasse 150 lignes OU contient des entrées > 3 mois :
+1. **Leçons mûres** (validées, plus jamais violées) → condenser en 1 ligne dans `pieges-<projet>.md` (erreurs) ou dans un trigger du cortex (réflexes)
+2. **Entrées redondantes** (plusieurs facettes du même événement) → fusionner en une seule
+3. **Historique long** → déplacer les entrées condensées vers `lessons-learned-archive.md` (jamais lu au démarrage, consultable au besoin)
+4. **Session-notes obsolètes** (> 6 semaines ET état dépassé ET projet a sa propre mémoire) → supprimer ou archiver
+
+Principe : la mémoire vivante doit rester relisible en entier. Ce qui est mûr migre vers le format court (piège/trigger), ce qui est mort part en archive.
+
+## Étape 9 — Audit des rituels (qui bénéficie de quoi ?)
+
+Pour chaque mécanisme de maintenance (sync, copie, export, backup manuel) : **qui le lit / l'utilise réellement ?** Si ni Claude ni l'utilisateur n'en profite depuis 2+ semaines → rituel sans bénéficiaire, à retirer. Un système accumule naturellement des rituels dont plus personne ne se souvient du pourquoi.
+
 ---
 
 ## Cadence cible
