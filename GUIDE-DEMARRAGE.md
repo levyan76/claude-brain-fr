@@ -168,6 +168,31 @@ Il mesurera la taille de ton cortex, des MCPs actifs, des mémoires projet — e
 
 ---
 
+### Bonus : donner une horloge à ton Claude (recommandé)
+
+Claude n'a **aucune notion de l'heure** — il peut te souhaiter "bonne nuit" à 14h. Le fix propre : un hook qui tamponne l'heure sur chaque message que tu envoies. Ajoute ceci dans `~/.claude/settings.json` (fusionne avec l'existant, n'écrase pas) :
+
+```json
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "date \"+⏰ %A %d %B %Y — %H:%M (heure locale)\""
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+Résultat : chaque message arrive chez Claude avec l'heure fraîche — il se situe dans le temps sans jamais deviner. (Tu peux aussi demander à Claude de l'installer : *"ajoute un hook UserPromptSubmit qui injecte la date et l'heure"*.)
+
+---
+
 ## Besoin d'aide ?
 
 Tout est dans le `README.md` (explication du modèle cerveau) et les playbooks (qui s'auto-déclenchent quand pertinents).
