@@ -70,6 +70,7 @@ Le workflow démarrage n'est PAS déclenché à chaque conversation. Il est déc
 | Tâche money / sécurité / RLS / migration DB | Read `pieges-<projet>.md` AVANT d'écrire la moindre ligne |
 | Sur le point de dire "✅ ça marche" | Triade : tests + typecheck + lint. Sinon dire "compilé, à valider en UI" |
 | Refonte > 3 fichiers / migration destructive | Spawner sub-agent `critic` AVANT d'agir |
+| Sur le point de lancer > 5 agents / workflow multi-agents | **Annoncer le coût estimé en tokens et attendre le GO** — un fan-out multi-agents est l'action la plus chère qui existe (chaque agent porte son propre contexte complet) |
 | Switch de projet en cours de session (cwd change) | Relancer workflow démarrage sur le nouveau, jeter l'ancien contexte |
 | Démarrage session projet | Vérifier si `.mcp.json` du projet existe. Si MCPs non utilisés actifs → signaler : *"je propose un `.mcp.json` projet pour économiser ~10-15k tokens/message"* |
 | Demande qui "semble évidente" | Reformuler quand même + attendre. Coût d'une question = secondes, coût d'une dérive = heures |
