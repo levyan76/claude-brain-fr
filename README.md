@@ -1,6 +1,8 @@
 # Claude Code "Modèle cerveau" — Cortex + Triggers + Playbooks
 
-> Pattern léger pour corriger les `CLAUDE.md` obèses dans Claude Code, réduire le coût en tokens par message de 50-80%, et rester productif sur plusieurs projets en parallèle.
+> Pattern léger pour corriger les `CLAUDE.md` obèses dans Claude Code : **-77% sur le poids de ton fichier auto-chargé** (mesuré : 414 → 99 lignes, ~4-5k tokens économisés par message), et rester productif sur plusieurs projets en parallèle.
+>
+> Transparence : ce gain porte sur le `CLAUDE.md` auto-chargé. Ton coût total par message inclut aussi les connectors/MCP actifs (souvent 15-20k tokens — le playbook `auto-introspection.md` couvre cet audit) et surtout tes patterns d'usage (les fan-outs multi-agents sont l'action la plus chère qui existe — d'où le garde-fou dans le trigger map).
 
 **Impact mesuré sur mon setup** : `CLAUDE.md` passé de **414 lignes → 99 lignes**, économie de ~4-5k tokens **par message** sans perte de capacité. Investissement rentabilisé après ~10 messages.
 

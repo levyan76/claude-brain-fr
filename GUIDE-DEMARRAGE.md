@@ -7,7 +7,7 @@
 ## C'est quoi exactement ?
 
 Un **template de configuration** pour Claude Code qui :
-- **Économise tes tokens** (~50-80% de moins par message)
+- **Économise tes tokens** (-77% sur le fichier de config auto-chargé à chaque message ; le playbook d'introspection t'aide ensuite à traquer les autres sources de coût — connectors, MCP, fan-outs)
 - **Garde la mémoire** entre tes sessions (Claude se souvient de toi, de tes projets, de tes erreurs/succès)
 - **Se personnalise tout seul** : au 1er lancement, Claude te pose 10 questions et adapte le cortex pour toi
 
