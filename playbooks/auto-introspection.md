@@ -46,6 +46,8 @@ Si le projet courant active des MCPs/Connectors **non utilisés dans son workflo
 
 **Pour les Connectors Claude.ai** (compte-level, pas projet) : Settings → Connectors → désactiver ceux non utilisés. Matrice connector × projet pour décider.
 
+**⚠️ Piège — le tool-list vu dans les system-reminders est un INSTANTANÉ pris au démarrage de la session, pas du live.** Si l'utilisateur modifie ses Connectors/Plugins dans les réglages claude.ai PENDANT la session, ça ne se reflète pas dans mes tools tant que la session n'est pas relancée. Avant de diagnostiquer un bloat MCP/Connectors depuis ce que je vois déjà en contexte, demander une capture d'écran des réglages actuels (Connecteurs/Plugins/Compétences) — sinon le diagnostic peut porter sur un état déjà périmé.
+
 ## Étape 2 — Détecter le bloat
 
 Seuils d'alerte :
